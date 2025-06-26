@@ -31,7 +31,7 @@ Firstname+=lastname
 console.log("fullname", Firstname);
 
 //addition on string and number -- final number will always be a string
-// whereas subtracting of string and number -- final result will always be a number as JS will convert strig into the number before subtraction 
+// whereas subtracting of string and number -- final result will always be a number as JS will convert string into the number before subtraction 
  
 const age = 20;
 const string = "is my age";
