@@ -26,10 +26,17 @@ something();
 
 //-------------------------------------------
 
-function notebook (price){
+//parametarised functions
+function notebook (price){    //parameters
 console.log(price);
-
 }
 
-notebook(55) //arguments
+notebook(55);//arguments
+
+
+
+// ------------------------------------------------------------
+
+
+
 
