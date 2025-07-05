@@ -37,6 +37,35 @@ notebook(55);//arguments
 
 // ------------------------------------------------------------
 
+// function ash(a,_ , c){                 //a will point to the first argument that is 10 
+//    console.log(a);
+//    console.log(c);
+   
+   
+// }
+// ash(10,20,30,40)
+
+// function ash(a,_ , c){                 //a will point to the first argument that is 10 
+//    console.log(a);
+//    console.log(c);
+   
+   
+// }
+
+// ash(10)
+
+// ------------------------------------------------------------
+
+//defult parametarized function
+function ash (a=200,b=100){            //parameters
+       console.log(a); 
+       console.log(b);
+       
+}
+ash (10, )        //arguments
+
+// ------------------------------------------------------------
+
 
 
 
