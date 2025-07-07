@@ -36,3 +36,22 @@ console.log(str1.split("-"));
 let str2 = "organge-banana,apple,pineapple";
 console.log(str2.replaceAll(",", "-").split("-"));
 console.log( str2.split("-"));
+
+let firtname = "Ashlesha";
+let lastname = "Kawthankar"
+
+console.log( firtname.concat(lastname));
+
+let text = "helllo world i'm ashlesha and i am very fat"
+
+console.log(text.slice(2));
+console.log(text.slice(2,8));
+
+
+//substring 
+
+console.log(text.substring(2,8));
+
+
+let str4 = "hello world";
+console.log(str4.charAt(str4.length - 1));
