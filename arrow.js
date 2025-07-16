@@ -48,3 +48,46 @@ console.log(str.replace("World","universe"));
 
 // let fruitbasket = "apple, apple, orange, apple";
 // console.log(fruitbasket.replace("apple","orange"));
+
+
+// function sum (a,b){
+//   return a + b                    // ---> Normal function
+// }
+// console.log(sum (2, 5));
+
+// let  sum = (a,b) =>{
+//   return a + b                    // ---> arrow function
+// }
+// console.log(sum (2, 5));
+
+// function sqr (a){
+//     return a*a;
+
+// }
+// console.log(sqr (5));
+// ------------way 1 --------------------------
+
+
+// const sqr = (a) => {
+//     return a*a
+// }
+// console.log(sqr (5));
+
+// ------------way 2 --------------------------
+
+// const sqr = (a) => a*a
+// console.log(sqr (5));
+
+// ------------way 3 --------------------------
+
+// const sqr = a => a*a
+// console.log(sqr (5));
+
+
+let cube = a => a*a*a
+console.log(cube (5));
+
+
+
+
+
