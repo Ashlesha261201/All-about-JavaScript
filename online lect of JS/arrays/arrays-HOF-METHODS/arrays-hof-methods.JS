@@ -51,6 +51,35 @@
 // console.log(newarr);
 
 
+// ----arrow method-----
+// let c = arr.map(item => item * item);
+// console.log(c);
+
+// const user = [
+//     {
+//         firstname: "ankit",
+//         lastname: "sharma",
+//         age : 35
+//     },
+//     {
+//         firstname: "ashlesha",
+//         lastname:"kavthsnkar",
+//         age : 23
+//     }
+// ]
+
+// let name = user.map(function(item , index){
+//     return item.firstname;
+// })
+
+// console.log(name);
+
+// const arr = [1,2,3,4,5];
+// const squredarr = arr.map(num => Math.pow(num,2));
+// console.log(squredarr);
+
+
+
 // --------------filter ()---------------------------------------
 
 // let arr = [10,20,26,30]
@@ -86,19 +115,71 @@
 // console.log(decision);
 
 // --------------every ()---------------------------------------
-let arr = [10,20,20,30]
+let arr = [18,20,20,30]
 
- let decision = arr.every(function (item, index){
-    console.log("hello");
-    if (item%10 ===0)
-    return true
-})
-console.log(decision);
+//  let decision = arr.every(function (item, index){
+//     console.log("hello");
+//     if (item%10 ===0)
+//     return true
+// })
+// console.log(decision);
 
-
-
-
-
+const adult = arr.every(age => age >= 18 );
+console.log(adult);
 
 
+// --------------reduce ()---------------------------------------
 
+// const arr = [1,2,3,4,5];
+
+// let reduced = arr.reduce(function(item , index){
+//     item = item + index;
+//     return item;
+// }, 0);
+
+// console.log(reduced);
+
+
+// //to find max value using reduce 
+// const output = arr.reduce(function (item , index){
+//       if (index > item){
+//         item = index;
+//       }
+//       return item
+// }, 0)
+
+// console.log(output);
+
+
+
+// const students = [
+//     {name:"ankit", rollno:31, marks:78},
+//     {name:"ruhi", rollno:15, marks:97},
+//     {name:"john", rollno:16, marks:25},
+//     {name:"ruth", rollno:7, marks:59},
+    
+// ];
+
+// // marks < 60 then add 20 
+// //marks > 60 then their total marks 
+
+// let array = students.map(students => {
+//     if (students.marks < 60){
+//         students.marks += 20;
+//     }
+//     return students
+// })
+
+// console.log(array);
+
+
+// let filteredstudents = array.filter(students => students.marks > 60);
+
+// console.log(filteredstudents);
+
+// let reduce = filteredstudents.reduce(function(item , index){
+//           item = item + index.marks;
+//           return item
+// }, 0)
+
+// console.log(reduce);
