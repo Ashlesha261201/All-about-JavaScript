@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+    <div id="root">
+        <h1 onclick="chnagetextcol()"> Javascript DOM events</h1>
+        <button onclick="changebgcolor()">Submit</button>
+        <div id="Welcome" onclick="chnagetextcol()" style="width: 150px; height: 150px; border: 1px solid palevioletred; ">Welcome</div>
+    </div>
+    <input type="text" onchange="uppercase()">
+
+
+    <script>
+        function changebgcolor (){
+             document.querySelector("body").style.backgroundColor = "black";
+        }
+
+        function chnagetextcol (){
+            document.getElementsByTagName("h1")[0].style.color = "yellow";
+            document.getElementById("Welcome").style.color = "pink";
+        }
+
+        document.getElementById("Welcome").onmouseover = changtext;
+        document.getElementById("Welcome").onmouseout = reverttext;
+
+        function changtext (){
+            document.getElementById("Welcome").innerHTML = "thank you";
+        }
+        function reverttext (){
+            document.getElementById("Welcome").innerHTML = "welcome";
+        }
+
+        function uppercase(){
+            const input = document.querySelector("input");
+            input.value = input.value.toUpperCase();
+        }
+
+    </script>
+</body>
+</html>

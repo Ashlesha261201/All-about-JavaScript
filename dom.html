@@ -1,0 +1,42 @@
+<!-- ways to find elements and tag names
+  - find elements on webpage using id
+  - using classnames
+  - using tagnames
+  - using css selectors
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "root">
+        <h1 class="header">learning DOM mNIPULATION</h1>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus modi fuga distinctio qui eaque nesciunt earum error ad expedita voluptatibus repellendus in eligendi minima, corrupti corporis quis facere rem dolores.</P>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptates itaque voluptatibus, eos nam autem dolorem similique officia aspernatur ad ullam maxime quam numquam et repellendus ducimus. Quae, nulla molestias.</p>
+        <p id = "newpara"></p>
+        <img id="myimg" src="download (1).jpg" alt="image of park">
+    </div>
+    <script>
+        const rootnode = document.getElementById("root");
+        console.log(rootnode);
+        const paragrahs = document.getElementsByTagName("p");
+        console.log(paragrahs);
+        const headercl = document.getElementsByClassName("header");
+        console.log(headercl);
+        const elements = document.querySelector("#root");
+        console.log(elements);
+        
+        const headerhtml = document.querySelector(".header");
+        headerhtml.innerHTML = "DOM MANUPILATION IN JS";
+        document.getElementById("myimg").src = "ytiger.jpg";
+        document.getElementById("newpara").innerHTML = "<h2>hello this is bengal tiger</h3>";
+
+        
+    </script>
+</body>
+</html>

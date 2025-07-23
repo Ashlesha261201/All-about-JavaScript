@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Listener</title>
+</head>
+
+<body>
+    <div id="root">
+        <p>Lorem, ipsum dolor sit amet consectetur?</p>
+        <button id="mybutton">reset</button>
+    </div>
+
+
+    <script>
+        document.querySelector("p").addEventListener("click", function(){
+            document.querySelector("body").style.backgroundColor = "green";
+        });
+        document.querySelector("p").addEventListener("click", function(){
+            document.querySelector("p").innerHTML = "Multiple events";
+        });
+         document.querySelector("p").addEventListener("mouseover", mouseover);
+            
+      
+        function mouseover(){
+             document.querySelector("p").innerHTML = "mouse over";
+        }
+        document.querySelector("button").addEventListener("click", function (){
+            document.querySelector("p").removeEventListener("mouseover", mouseover);
+        });
+
+        window.addEventListener("resize", setText);
+
+        function setText(){
+            document.querySelector("button").innerHTML = "Window";
+        }
+
+        let button = document.getElementById("mybutton" );
+        button.addEventListener("click", function(){
+            alert("button clicked");
+        });
+        button.click();
+
+    </script>
+</body>
+
+</html>

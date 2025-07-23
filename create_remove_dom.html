@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="existing_para">Lorem, ipsum dolor sit amet.</p>
+    </div>
+
+
+    <script>
+       const para =  document.createElement("p");
+       para.innerHTML = "my name is ashlesha and this is a new para";
+        const parent = document.getElementById("parent");
+        // parent.appendChild(para);
+        const existing_para = document.getElementById("existing_para");
+        parent.insertBefore(para, existing_para);
+
+         existing_para.remove();
+        
+        const para2 = document.createElement("h1");
+        para2.innerHTML = "ASHLESHA KAWTHANKAR";
+        
+        parent.insertBefore(para2, para);
+
+        var para3 = document.get
+
+    </script>
+</body>
+
+</html>
